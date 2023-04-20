@@ -6,23 +6,55 @@
 Console.WriteLine("Введите число");
 int n = Convert.ToInt32(Console.ReadLine());
 
+bool k = n==0;
+bool m = n==1;
+
 int count = 0;
-if (n % 2 == 0)
+
+if (k | m)
 {
-    while (count < n)
-    {
-        count = count + 2;
-        Console.Write(count);
-        Console.Write(" ");
-    }
+    Console.WriteLine("Таких чисел нет");
 }
 else
 {
-    while (count < (n - 1))
+    if (n >= 0)
     {
-        count = count + 2;
-        Console.Write(count);
-        Console.Write(" ");
+        if (n % 2 == 0)
+        {
+            while (count < n)
+            {
+                count = count + 2;
+                Console.Write(count);
+                Console.Write(" ");
+            }
+        }
+        else
+        {
+            while (count < (n - 1))
+            {
+                count = count + 2;
+                Console.Write(count);
+                Console.Write(" ");
+            }
+        }
+    }
+    else
+if (n % 2 == 0)
+    {
+        while (count > n)
+        {
+            count = count - 2;
+            Console.Write(count);
+            Console.Write(" ");
+        }
+    }
+    else
+    {
+        while (count > (n + 1))
+        {
+            count = count - 2;
+            Console.Write(count);
+            Console.Write(" ");
+        }
     }
 }
-
