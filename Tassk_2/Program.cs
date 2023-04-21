@@ -10,17 +10,22 @@ int first = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int second = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите второе число");
+Console.WriteLine("Введите третье число");
 int third = Convert.ToInt32(Console.ReadLine());
 
 int max = first;
-if (max<second)
+if (max < second)
 {
     max = second;
+    if (max < third)
+    {
+        max = third;
+    }
 }
-else if (max<third)
+else if (max < third)
 {
     max = third;
 }
 
+Console.Write("max=");
 Console.WriteLine(max);
