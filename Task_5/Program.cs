@@ -19,8 +19,7 @@ while ((num/10)>9)
 }
 
 result = num%10;
-Console.Write("Вторая цифра слева ->  ");
-Console.WriteLine(result);
+Console.WriteLine("Вторая цифра слева ->  "+result);
 }
 else
 Console.WriteLine("Нет");
