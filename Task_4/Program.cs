@@ -6,8 +6,8 @@
 Console.WriteLine("Введите число");
 int n = Convert.ToInt32(Console.ReadLine());
 
-bool k = n==0;
-bool m = n==1;
+bool k = n == 0;
+bool m = n == 1;
 
 int count = 0;
 
@@ -24,8 +24,7 @@ else
             while (count < n)
             {
                 count = count + 2;
-                Console.Write(count);
-                Console.Write(" ");
+                Console.Write(count + " ");
             }
         }
         else
@@ -33,8 +32,7 @@ else
             while (count < (n - 1))
             {
                 count = count + 2;
-                Console.Write(count);
-                Console.Write(" ");
+                Console.Write(count + " ");
             }
         }
     }
@@ -44,8 +42,8 @@ if (n % 2 == 0)
         while (count > n)
         {
             count = count - 2;
-            Console.Write(count);
-            Console.Write(" ");
+            Console.Write(count + " ");
+
         }
     }
     else
@@ -53,8 +51,7 @@ if (n % 2 == 0)
         while (count > (n + 1))
         {
             count = count - 2;
-            Console.Write(count);
-            Console.Write(" ");
+            Console.Write(count + " ");
         }
     }
 }
