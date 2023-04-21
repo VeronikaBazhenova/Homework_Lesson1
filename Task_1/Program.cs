@@ -14,15 +14,11 @@ int max = first, min = second;
 
 if (max>min)
 {
-    Console.Write("max=");
-    Console.WriteLine(max);
-    Console.Write("min=");
-    Console.WriteLine(min);
+    Console.WriteLine("max="+max);
+    Console.WriteLine("min="+min);
 }
 else 
 {
-    Console.Write("max=");
-    Console.WriteLine(min);
-    Console.Write("min=");
-    Console.WriteLine(max);
+    Console.WriteLine("max="+min);
+    Console.WriteLine("min="+max);
 }
