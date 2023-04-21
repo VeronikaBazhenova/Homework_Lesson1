@@ -27,5 +27,4 @@ else if (max < third)
     max = third;
 }
 
-Console.Write("max=");
-Console.WriteLine(max);
+Console.WriteLine("max="+max);
