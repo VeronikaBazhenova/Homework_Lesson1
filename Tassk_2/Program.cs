@@ -14,17 +14,7 @@ Console.WriteLine("Введите третье число");
 int third = Convert.ToInt32(Console.ReadLine());
 
 int max = first;
-if (max < second)
-{
-    max = second;
-    if (max < third)
-    {
-        max = third;
-    }
-}
-else if (max < third)
-{
-    max = third;
-}
+if (max < second) max = second;
+if (max < third) max = third;
 
-Console.WriteLine("max="+max);
+Console.WriteLine("max=" + max);

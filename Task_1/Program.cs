@@ -10,15 +10,13 @@ int first = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int second = Convert.ToInt32(Console.ReadLine());
 
-int max = first, min = second;
-
-if (max>min)
+if (first>second)
 {
-    Console.WriteLine("max="+max);
-    Console.WriteLine("min="+min);
+    Console.WriteLine("max="+first);
+    Console.WriteLine("min="+second);
 }
 else 
 {
-    Console.WriteLine("max="+min);
-    Console.WriteLine("min="+max);
+    Console.WriteLine("max="+second);
+    Console.WriteLine("min="+first);
 }
